@@ -3,14 +3,16 @@
   /* border: 1px solid blue; */
   color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow: auto;
 }
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   margin: 0px;
   padding: 0px;
-  background: linear-gradient(#BCD8C1, #439A86);
+  background-color: #BCD8C1;
+  /* background: linear-gradient(#BCD8C1, #439A86); */
 }
 
 
@@ -104,6 +106,11 @@ body {
 
 .main-text-left-container :nth-child(2) {
   font-size: 5em;
+  width: fit-content;
+}
+
+.main-text-left-container :nth-child(2):hover{
+  color: #fff;
 }
 
 .main-text-right-container {
@@ -124,5 +131,87 @@ body {
   padding: 0;
   transform: rotate(90deg);
 }
+
+/* About Me */
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  width: 100%;
+  height: fit-content;
+  /* background-color: red; */
+}
+
+.about-me-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+.about-me-left {
+  padding: 10px;
+  height: 500px;
+  width: 50%;
+  text-align: right;
+}
+
+.about-me-right {
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px;
+  height: 500px;
+  width: 50%;
+}
+
+/* Portfolio */
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  width: 100%;
+  height: fit-content;
+  /* background-color: red; */
+}
+
+.portfolio-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+.portfolio-left {
+  padding: 10px;
+  height: 500px;
+  width: 50%;
+  text-align: right;
+}
+
+.portfolio-right {
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px;
+  height: 500px;
+  width: 50%;
+}
+
+/* Contact Me */
+
+.contact-me {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+
+form {
+  margin-top: 5%;
+  background-color: #b0ceb5;
+  padding: 2.5%;
+}
+
 
 
