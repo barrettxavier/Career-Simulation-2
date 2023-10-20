@@ -3,7 +3,7 @@
   /* border: 1px solid blue; */
   color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  overflow: auto;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -61,7 +61,7 @@ body {
 .links ul {
   display: inline-flex;
 }
- 
+
 .links ul li {
   margin-left: 15px;
   list-style-type: none;
@@ -69,6 +69,11 @@ body {
 
 .links ul li a {
   text-decoration: none;
+}
+
+.links ul li a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* MAIN PAGE TEXT */
@@ -89,11 +94,13 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
+  padding: 0 15%;
+  /* background-color: red; */
 }
 
 .main-text-left-container {
   text-align: left;
-  width: 50%;
+  width: 30%;
   margin: 0;
   padding-top: 20%;
   padding-left: 10%;
@@ -114,20 +121,21 @@ body {
 }
 
 .main-text-right-container {
-  width: 40%;
+  width: 50%;
   margin: 0;
   padding: 0;
   padding-right: 0%;
+  overflow: hidden;
 }
 
 .main-text-right-container img {
-  width: 50em;
+  width: 60em;
 }
 
 .main-text-farright-container {
   width: 10%;
   height: fit-content;
-  margin: 5% 10% 0 0;
+  margin: 5% 0% 0 0;
   padding: 0;
   transform: rotate(90deg);
 }
@@ -165,6 +173,11 @@ body {
   width: 50%;
 }
 
+.about-me-right img:hover {
+  transform: scale(110%);
+  transition: 0.7s;
+}
+
 /* Portfolio */
 
 .portfolio {
@@ -198,6 +211,11 @@ body {
   width: 50%;
 }
 
+.portfolio-right img:hover {
+  transform: scale(110%);
+  transition: 0.7s;
+}
+
 /* Contact Me */
 
 .contact-me {
@@ -215,3 +233,123 @@ form {
 
 
 
+@media (max-width: 1200px) {
+
+  .about-me {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    margin-top: 10vh;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+  }
+  
+  .about-me-left {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .about-me-right {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+  }
+  
+  .about-me-right img:hover {
+    transform: scale(110%);
+    transition: 0.7s;
+  }
+
+  .portfolio {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    margin-top: 10vh;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+  }
+  
+  .portfolio-left {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .portfolio-right {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+  }
+  
+  .portfolio-right img:hover {
+    transform: scale(110%);
+    transition: 0.7s;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 2em;
+    /* background-color: red; */
+  }
+  
+  .logo {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+  }
+  
+  .logo h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    text-align: center;
+  }
+  
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 5%;
+  }
+
+  .links ul li {
+    margin-left: 15px;
+    list-style-type: none;
+  }
+
+}
